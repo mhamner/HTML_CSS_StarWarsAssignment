@@ -1,0 +1,276 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+img.logos
+{
+    width: 20px;
+    border-radius: 10px;
+}
+.header
+{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(images/StarWars1.jpg);
+    background-position:  center;
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display:flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width:40%;
+    padding: 0% 0%;    
+}
+.nav-links
+{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.nav-links ul li a
+{
+    color:yellow;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+.main-content
+{
+    width: 70%;
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content h1
+{
+    font-size: 40px;
+}
+.main-content p
+{
+    margin: 10px 0 40px;
+    font-size: 100%;
+    color:white;
+}
+.main-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: yellow;
+    border: 1px solid yellow;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.main-btn:hover
+{
+    background: orange;
+    color: white;
+}
+.open-close-icons
+{
+    display: none;
+}
+
+@media(max-width: 700px)
+{
+    nav img
+    {
+        width:0%;
+        padding: 0% 0%;    
+    }
+    .main-content
+    {
+        font-size: 15px;       
+    }
+    .main-content h1
+    {
+        font-size: 25px;
+    }
+    .nav-links ul li 
+    {
+        display: block;      
+    }
+    .nav-links
+    {
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .open-close-icons
+    {
+        display: block;
+        color:white;
+        margin: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor:pointer;
+    }   
+    html body 
+    {
+        overflow-x:hidden;
+    }
+}
+/*-------- Trilogies Section -----*/
+.trilogies
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1
+{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p
+{
+    color:black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row
+{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.trilogy
+{
+    flex-basis: 31%;
+    background:rgba(83, 81, 80, 0.301);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.trilogy h3
+{
+    text-align: center;
+    color:black;
+    font-weight: 600;
+    margin: 10px 0    
+}
+.trilogy:hover
+{
+    box-shadow: 0 0 20px 0px red;
+    transition: 0.5s;
+}
+@media(max-width: 700px) 
+{
+    .row
+    {
+        flex-direction: column;
+    }
+}
+
+/*---------- Ships Section -----------------*/
+.ships
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.ship
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.ship img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layer-rebellion
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer-empire
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer-rebellion:hover
+{
+    background: rgba(0, 255, 13, 0.26);
+}
+.layer-empire:hover
+{
+    background: rgba(255, 0, 0, 0.247);
+}
+h3
+{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width: 700px) 
+{
+    .location img
+    {
+        height:300px;
+        width: 300px;
+        overflow:hidden;
+    }
+}

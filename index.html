@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="This is a demo Star Wars website">
+        <link rel="stylesheet" href="style.css">
+        <title>Star Wars</title>
+    </head> 
+    <body>
+      <section class="header">
+          <nav>
+            <a href="https://www.starwars.com/" target="_blank"><img src="images/StarWarsLogo.png" /></a>
+            <div class="nav-links" id="navLinks">
+                <p class="open-close-icons" onclick="hideMenu()">X</p>
+                <ul>                
+                    <li><a href="https://starwars.fandom.com/wiki/Alliance_to_Restore_the_Republic" target="_blank">Rebellion</a></li>
+                    <li><a href="https://starwars.fandom.com/wiki/Galactic_Empire" target="_blank">Empire</a></li>
+                </ul>
+            </div>
+            <p class="open-close-icons" onclick="showMenu()">=</p>
+          </nav>
+          <div class="main-content">
+              <h1>Episode X:  The Rise of Dave Filioni</h1>
+              <p>
+                It is a time of great struggle.  The Star Wars Franchise unjustly took a hit after the dubiously-received sequel trilogy. <br />
+                Now, one man, Lucas Film Executive Creative Director Dave Filoni, struggles to save the franchise and restore awesomess to the galaxy.
+            </p>
+            <a class="main-btn" href="signup.html">Join the Fight!</a>
+          </div>
+      </section>
+
+      <section class="trilogies">
+          <h1>The Trilogies</h1>
+          <p>Waystar offers several awesome applications to make working with Healthcare Payments easier.</p>
+          <div class="row">
+              <div class="trilogy">
+                  <h3>Original:  Episodes IV - VI</h3>
+                  <p>Luke Skywalker and the Rebel Alliance mount a valiant struggle against the evil Galactic Empire.  Can Luke turn his father, the fallen Jedi Darth Vader, 
+                      back to the Light?  Or will the Emperor succeed in crushing the Rebellion?
+                  </p>
+               </div>
+               <div class="trilogy">
+                  <h3>Prequel:  Episodes I - III</h3>
+                  <p>The Jedi are at the peak of their power, keeping peace and order in the Galaxy.  But the Dark Side is rising.  Can Obi-Wan Kenobi and Anakin Skywalker lead 
+                      the Republic in ending the Clone Wars, or will Darth Sidious's evil plans come to fruition?
+                  </p>
+                </div>
+                <div class="trilogy">
+                  <h3>Sequel:  Episodes VII - IX</h3>
+                  <p>The New Republic struggles to keep order and eliminate the evil First Order.  But Luke Skwyalker's nephew, Kylo Ren, has other plans.  And somewhere, 
+                      in the mysterious outer regions, an evil force thought long-destroyed is pulling the strings.  
+                  </p>        
+                </div>
+          </div>
+      </section>
+
+      <section class="ships">
+        <h1>Famous Ships</h1>
+        <p>There are many famous ships in Star Wars.  These are possibly the 3 MOST famous!</p>
+        <div class="row">
+            <div class="ship">
+                <div class="layer-rebellion">
+                    <h3>X-Wing</h3>
+                </div>
+                <img src="images/x-wing.jpg">
+             </div>
+             <div class="ship">
+                <div class="layer-empire">
+                    <h3>Tie Fighter</h3>
+                </div>
+                <img src="images/tie-fighter.jpg">
+              </div>
+              <div class="ship">
+                <div class="layer-rebellion">
+                    <h3>Millennium Falcon</h3>
+                </div>
+                <img src="images/millenium-falcon.png">
+              </div>
+        </div>
+    </section>
+
+      <!-- JavaScript for showing and hiding the menu on smaller screens -->
+      <script>
+          var navLinks = document.getElementById("navLinks");
+
+          function showMenu()
+          {
+              navLinks.style.right = "0";
+          }
+          function hideMenu()
+          {        
+              navLinks.style.right = "-200px";
+          }
+      </script>
+    </body>
+</html>
+
